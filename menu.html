@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RogFood - Menú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #ff4d4d;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #b30000;
+        }
+        .menu-section {
+            padding: 50px 20px;
+            background-color: #f2f2f2;
+            color: black;
+        }
+        .menu-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .menu-item {
+            margin-bottom: 30px;
+            border: 2px solid #b30000;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item-body {
+            padding: 20px;
+        }
+        .menu-item-body h5 {
+            margin-bottom: 15px;
+            color: #b30000;
+        }
+        .menu-item-body p {
+            margin-bottom: 15px;
+        }
+        .btn-comprar {
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-comprar:hover {
+            background-color: #b30000;
+        }
+        footer {
+            background-color: #b30000;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">RogFood</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/1600718/pexels-photo-1600718.jpeg');">
+                <div class="carousel-caption">
+                    <h3>Deliciosas Pizzas</h3>
+                    <p>Las mejores pizzas de la ciudad.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg');">
+                <div class="carousel-caption">
+                    <h3>Sabor a Tacos</h3>
+                    <p>Disfruta de nuestros tacos auténticos.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/353539/pexels-photo-353539.jpeg');">
+                <div class="carousel-caption">
+                    <h3>Exquisitas Baleadas</h3>
+                    <p>El mejor sabor en cada bocado.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2>Menú</h2>
+            <div class="row">
+                <!-- Menu Item 1 -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg" alt="Pizza Margherita">
+                        <div class="menu-item-body">
+                            <h5>Pizza Margherita</h5>
+                            <p>Una deliciosa pizza con salsa de tomate, mozzarella y albahaca fresca.</p>
+                            <a href="compra1.html" class="btn btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Tacos al Pastor">
+                        <div class="menu-item-body">
+                            <h5>Tacos al Pastor</h5>
+                            <p>Tortillas de maíz rellenas de carne de cerdo adobada, piña y cilantro.</p>
+                            <a href="compra1.html" class="btn btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="https://buenprovecho.hn/wp-content/uploads/2022/06/Baleadas-la-Exquisita.png" alt="Baleadas">
+                        <div class="menu-item-body">
+                            <h5>Baleadas</h5>
+                            <p>Tortilla de harina rellena de frijoles, queso y crema, con opción de agregar huevo o carne.</p>
+                            <a href="compra1.html" class="btn btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/4e4293857c03d819e4ae51de1e86d66a.jpg">
+                        <div class="menu-item-body">
+                            <h5>Hamburguesa Clásica</h5>
+                            <p>Jugosa hamburguesa con queso, lechuga, tomate y una deliciosa salsa especial.</p>
+                            <a href="compra1.html" class="btn btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Quesadilla">
+                        <div class="menu-item-body">
+                            <h5>Quesadilla</h5>
+                            <p>Tortilla rellena de queso derretido y acompañada de guacamole y salsa.</p>
+                            <a href="compra1.html" class="btn btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RogFood. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
